@@ -5,6 +5,10 @@
 
 class Array{
 private:
+	/* #ifndef STARTER_VALUE
+	 * #define STARTER_VALUE -1111	// aleatory value, just for get for the tests cases.
+	 * #endif 	// !STARTER_VALUE
+	 */
 	int cols, rows;
 	int **table;
 
@@ -44,7 +48,7 @@ public:
 			for (int j=0; j<this->rows; j++){
 				if ( table[i][j] == -1111 ) {
 					printf("\\\n");
-					break;  //j = this->rows; continue; more faster than this.
+					break;	//j = this->rows; continue; more faster than this.
 				}
 				else printf( "%d -> ", table[i][j] );
 				if ( j==rows-1 ) {
